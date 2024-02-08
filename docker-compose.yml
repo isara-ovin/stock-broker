@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  web:
+    build: ./
+
+    command: sh -c "python manage.py makemigrations &&
+                    python manage.py migrate &&
+                    gunicorn StockBroker.wsgi --bind 0.0.0.0:8000" 
+    ports:
+      - 8000:8000
+
+  schduled:
+    build: .
+
+    command: "python manage.py random_stocks"
+
+    restart: always
