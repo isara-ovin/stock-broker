@@ -40,8 +40,6 @@ Within the the container ther will be a seperate service to run a management com
 
 ## API Reference for Django CRUD
 
-Configured two routers from the root ```api/``` for the each section of the task
-browsable api is available at http://127.0.0.1:8000/api/
 
 #### Register user 
 
