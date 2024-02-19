@@ -151,9 +151,9 @@ For selling stocks :
 
 ## Testing
 
-For testing I have used Pytest and Pytest-factoryboy to create dummy data for testing (included in requirments.txt). Testing can be found under tests/. I have created testcases to validate user roles as per the coding task. And crated testcases for transaction api (buy).
+For testing, I have used Pytest and Pytest-factoryboy to create dummy data for testing (included in requirments.txt). Testing can be found under [tests/](https://github.com/isara-ovin/stock-broker/tree/main/tests). I have created test cases to validate user roles as per the coding task. And created test cases for transaction api (buy).
 
-Run commnad **pytest** in root directory to run the testcases 
+Run command **pytest** in the root directory to run the test cases 
 
 #### Test Cases under test_user_roles.py
 * Only admins are allowed to create stock
