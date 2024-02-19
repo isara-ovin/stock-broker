@@ -4,3 +4,6 @@ djangorestframework-simplejwt
 django-filter
 schedule
 gunicorn
+pytest-django
+pytest-cov
+pytest-factoryboy
