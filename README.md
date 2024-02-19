@@ -148,3 +148,21 @@ For selling stocks :
 		"timestamp": "{% now 'iso-8601', '' %}",
 		"stock_name": "Stock A"
 	}
+
+## Testing
+
+For testing I have used Pytest and Pytest-factoryboy to create dummy data for testing (included in requirments.txt). Testing can be found under tests/. I have created testcases to validate user roles as per the coding task. And crated testcases for transaction api (buy).
+
+Run commnad **pytest** in root directory to run the testcases 
+
+#### Test Cases under test_user_roles.py
+* Only admins are allowed to create stock
+* Admins can not Buy or Sell stock
+* Investors are not allowed to edit stocks (POST, PUT, DELETE)
+
+
+#### Test Cases under test_transactions.py
+* Investor can buy existing stocks
+* Records create or updates in Holdings table
+* Record increments its value when buying valid stock
+* Investor can't buy non-existing stocks
